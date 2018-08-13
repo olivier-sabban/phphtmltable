@@ -10,4 +10,7 @@ install:
 
 scripts:
 - "./vendor/bin/php-cs-fixer fix --diff --dry-run"
-- "./vendor/bin/phpunit"
+- "./vendor/bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml"
+
+after_success:
+- travis_retry php vendor/bin/php-coveralls
