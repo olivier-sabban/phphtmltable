@@ -18,11 +18,7 @@ PHP 7.0 or higher.
 
 Include repositroy in your project by adding it to your composer.json file.
 ```
-{
-    "require": {
-        "samoussa/PhpHtmlTable": "1.*"
-    }
-}
+composer require samoussa/phphtmltable
 ```
 
 ## Usage
