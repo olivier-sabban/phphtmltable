@@ -1,5 +1,5 @@
 {
-    "name": "samoussa/PhpHtmlTable",
+    "name": "samoussa/phphtmltable",
     "require": {
         "php": ">=7.0"
     },
