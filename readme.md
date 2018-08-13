@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/samoussa/PhpHtmlTable.svg?branch=master)](https://travis-ci.org/samoussa/PhpHtmlTable)
+
 # PHP HTML TABLE
 
 This repository allows to manipulate html tables in php
