@@ -46,7 +46,7 @@ class tableRender extends html
      *
      * @return string
      */
-    public function html($dom = 'table', $innerHtml = ''): string
+    public function html(string $dom = 'table', $innerHtml = ''): string
     {
         if ($this->trs) {
             $innerHtml .= implode(
