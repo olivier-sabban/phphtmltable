@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/samoussa/PhpHtmlTable.svg?branch=master)](https://travis-ci.org/samoussa/PhpHtmlTable) [![Coverage Status](https://coveralls.io/repos/github/samoussa/PhpHtmlTable/badge.svg?branch=master)](https://coveralls.io/github/samoussa/PhpHtmlTable?branch=master)
+[![Build Status](https://travis-ci.org/samoussa/phphtmltable.svg?branch=master)](https://travis-ci.org/samoussa/PhpHtmlTable) [![Coverage Status](https://coveralls.io/repos/github/samoussa/PhpHtmlTable/badge.svg?branch=master)](https://coveralls.io/github/samoussa/PhpHtmlTable?branch=master)
 
 # PHP HTML TABLE
 
