@@ -6,12 +6,13 @@ class tr extends html
 {
     private $tds = [];
 
+
     /**
      * tr constructor.
-     *
-     * @param array|null $attributes
+     * @param array|null $tds
+     * @param array $attributes
      */
-    public function __construct(array $tds = null)
+    public function __construct(array $tds = null, array $attributes = [])
     {
         if ($tds) {
             array_walk($tds, function ($cel) {
@@ -22,6 +23,8 @@ class tr extends html
                 }
             });
         }
+
+        $this->attributes = $attributes;
     }
 
     /**
