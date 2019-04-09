@@ -19,6 +19,11 @@ final class trTest extends TestCase
         $render = $tr->generate();
         $this->assertTrue($render == '<tr><td>1</td><td>2</td><td>3</td></tr>', $render);
 
+        $tr = new tr([1, [2], 3],['class'=>'over']);
+        $render = $tr->generate();
+        $this->assertTrue($render == '<tr class="over"><td>1</td><td>2</td><td>3</td></tr>', $render);
+
+
         $tr = new tr([1, [2, ['colspan' => 2]], 3]);
         $render = $tr->generate();
         $this->assertTrue($render == '<tr><td>1</td><td colspan="2">2</td><td>3</td></tr>', $render);
