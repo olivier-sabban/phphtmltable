@@ -13,14 +13,14 @@ final class TableTest extends TestCase
 
         $html->addAttributes(['KeyAttribute1' => 'valueAttribute1']);
         $render = $html->html('test','abc');
-        $this->assertTrue($render=='<test keyattribute1="valueattribute1">abc</test>', $render);
+        $this->assertTrue($render=='<test KeyAttribute1="valueAttribute1">abc</test>', $render);
 
         $render = $html->html('test',['a','b','c']);
-        $this->assertTrue($render=='<test keyattribute1="valueattribute1">abc</test>', $render);
+        $this->assertTrue($render=='<test KeyAttribute1="valueAttribute1">abc</test>', $render);
 
         $html->addAttributes(['KeyAttribute2' => 'valueAttribute2']);
         $render = $html->html('test','abc');
-        $this->assertTrue($render=='<test keyattribute1="valueattribute1" keyattribute2="valueattribute2">abc</test>', $render);
+        $this->assertTrue($render=='<test KeyAttribute1="valueAttribute1" KeyAttribute2="valueAttribute2">abc</test>', $render);
 
     }
 }
