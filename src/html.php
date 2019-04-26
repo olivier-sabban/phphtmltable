@@ -50,6 +50,6 @@ class html
             $innerHtml = implode('', $innerHtml);
         }
 
-        return mb_strtolower('<' . $dom . $this->renderAttributes() . '>' . (string) $innerHtml . '</' . $dom . '>');
+        return '<' . $dom . $this->renderAttributes() . '>' . (string) $innerHtml . '</' . $dom . '>';
     }
 }

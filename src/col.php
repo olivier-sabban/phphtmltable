@@ -19,6 +19,6 @@ class col extends html
      */
     public function generate(): string
     {
-        return mb_strtolower('<col' . $this->renderAttributes() . '>');
+        return '<col' . $this->renderAttributes() . '>';
     }
 }

@@ -86,12 +86,13 @@ class table extends tableRender
         return $this->tfoot;
     }
 
+
     /**
-     * @param $returnOutput
-     *
+     * @param bool $displayOutput
+     * @param bool $lower
      * @return string
      */
-    public function render($displayOutput = false): string
+    public function render($displayOutput = false, $lower = true): string
     {
         $before = '';
 
@@ -116,9 +117,9 @@ class table extends tableRender
                 ($this->thead ?? '') .
                 ($this->tbody ?? '') .
                 ($this->tfoot ?? '')
-            );
+                , $lower);
         } else {
-            $output = $this->html('table', $before);
+            $output = $this->html('table', $before, $lower);
         }
 
         if ($displayOutput) {
